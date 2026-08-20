@@ -2,6 +2,20 @@
 
 A modern, responsive AI chat interface with integrated web search functionality. ChatVerse 1.0 provides a clean UI similar to Perplexity.ai, combining conversational AI with real-time search capabilities
 
+---
+
+## 🌐 Live Demo
+
+**Frontend:**
+> https://your-vercel-url.vercel.app
+
+**Backend API:**
+> https://your-render-url.onrender.com
+
+> **Note:** The backend is hosted on Render's free tier, so the first request may take 30–60 seconds while the service wakes up.
+
+---
+
 ## ✨ Features
 
 - **Real-time AI Responses** - Stream AI responses as they're generated
@@ -9,6 +23,8 @@ A modern, responsive AI chat interface with integrated web search functionality.
 - **Conversation Memory** - Maintains context throughout your conversation
 - **Search Process Transparency** - Visual indicators show searching, reading, and writing stages
 - **Responsive Design** - Clean, modern UI that works across devices
+
+---
 
 ## 🏗️ Architecture
 
@@ -25,6 +41,29 @@ ChatVerse 1.0 follows a client-server architecture:
 - Integration with Tavily Search API for web searching capabilities
 - Server-Sent Events for real-time streaming of AI responses
 
+---
+
+## 🛠 Tech Stack
+
+Frontend
+- Next.js
+- React
+- Tailwind CSS
+- TypeScript
+
+Backend
+- FastAPI
+- LangGraph
+- OpenAI
+- Tavily
+
+Deployment
+- Docker
+- Vercel
+- Render
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -34,12 +73,13 @@ ChatVerse 1.0 follows a client-server architecture:
 - OpenAI API key
 - Tavily API key
 
-### Installation
+### Local Installation
 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/fuvad/ChatVerse-Agent.git
    cd ChatVerse-Agent
+   ```
 
 2. **Set up the server**
    ```bash
@@ -47,6 +87,7 @@ ChatVerse 1.0 follows a client-server architecture:
    python -m venv venv
    venv\Scripts\activate
    pip install -r requirements.txt
+   ```
 
 3. **Configure environment variables**  
    Create a `.env` file in the server directory:
@@ -57,6 +98,7 @@ ChatVerse 1.0 follows a client-server architecture:
 ```bash
 cd ../frontend
 npm install
+```
 
 ### Running the Application
 
@@ -64,11 +106,15 @@ npm install
    ```bash
    cd backend
    uvicorn app:app --reload
+   ```
+
+   - Can also use Docker for running backend
 
 2. **Start the client**
    ```bash
    cd frontend
    npm run dev
+   ```
 
 3. **Open your browser and navigate to http://localhost:3000**   
 
@@ -83,3 +129,48 @@ npm install
    - AI uses this information to formulate a response
 5. **Response is streamed** back to the client in real-time
 6. **Search stages are displayed** to the user (searching, reading, writing)
+
+---
+
+## ☁️ Deployment
+### Backend
+
+The backend is deployed on **Render**.
+
+Required environment variables
+
+```text
+OPENAI_API_KEY
+TAVILY_API_KEY
+```
+
+---
+
+### Frontend
+
+The frontend is deployed on **Vercel**.
+
+---
+
+# 🚧 Roadmap
+
+## ChatVerse 2.0
+
+Planned improvements
+
+- User authentication
+- Persistent chat history
+- Multiple conversations
+- Markdown rendering
+- Code syntax highlighting
+- Copy code button
+- File uploads
+- PDF chat
+- Image understanding
+- Image generation
+- Voice interaction
+- Better search query generation
+- Improved UI/UX
+- Database-backed conversation storage
+
+---
