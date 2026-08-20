@@ -7,10 +7,10 @@ A modern, responsive AI chat interface with integrated web search functionality.
 ## 🌐 Live Demo
 
 **Frontend:**
-> https://your-vercel-url.vercel.app
+> https://chatverse-frontend-umber.vercel.app/
 
 **Backend API:**
-> https://your-render-url.onrender.com
+> https://chatverse-latest.onrender.com
 
 > **Note:** The backend is hosted on Render's free tier, so the first request may take 30–60 seconds while the service wakes up.
 
