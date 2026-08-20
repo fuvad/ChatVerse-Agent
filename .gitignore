@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
 
 # Virtual environments
 chatenv/
@@ -32,6 +33,27 @@ htmlcov/
 build/
 dist/
 *.egg-info/
+
+# Backend runtime files
+*.db
+*.sqlite3
+*.log
+
+# Frontend / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+frontend/.turbo/
+frontend/.vercel/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
 
 # IDE / OS files
 .vscode/
